@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução de Exercícios</title>
+</head>
+<body>
+
+
+
+<style>    /* Área do CSS */
+
+input[type="number"] {
+    width: 250px;}   /*definindo tamanho do campo dos inputs "number" */
+
+h1{text-decoration: underline;}
+
+fieldset{
+    width: 50em;
+    margin-top: 40px;
+    margin-bottom: 40px;}
+
+    nav { 
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      background: rgb(0, 0, 0);
+      height: 8vh; }
+
+#titulo{
+    color: white;
+}
+
+#A{background-color: rgb(39, 143, 233);}
+
+#B{background-color: rgb(77, 175, 199);}
+
+#C{background-color: rgb(63, 207, 171);}
+
+#D{background-color: rgb(102, 194, 66);}
+
+#E{background-color: rgb(191, 226, 94);}
+
+#F{background-color: rgb(233, 230, 73);}
+
+#G{background-color: rgb(240, 189, 79);}
+
+#H{background-color: rgb(250, 158, 54);}
+
+#I{background-color: rgb(252, 138, 85);}
+
+#J{background-color: rgb(219, 73, 73);}
+</style>
+
+
+<header>
+    <nav> 
+     <h1 id="titulo">Exercícios</h1>  
+    </nav>
+</header>
+
+      <!-- Área de Formulários -->
+
+<center>
+    <form name="validacao" action="validacao.php" method="post">
+        <fieldset id="A">
+        <h1>Validação</h1>
+        <br>
+        <label>Número: <input type="number" name="valor" placeholder="Digite para checar" required></label>
+        <input type="submit" value="Validar"></fieldset>
+    </form>
+</center>
+</body>
+</html>
+
+
+
+<center>
+    <form name="tabuada" action="tabuada.php" method="post">
+        <fieldset id="B">
+        <h1>Tabuada</h1>
+        <br><label>Número: <input type="number" name="numero" placeholder="Digite para ter a tabuada" required></label> 
+        <input type="submit" value="Calcular">
+
+</fieldset>
+    </form>
+</center>
+
+
+<center>
+    <form name="tabuada" action="fatorial.php" method="post">
+        <fieldset id="C">
+        <h1>Fatorial</h1>
+        <br><label>Número: <input type="number" name="N" placeholder="Digite para fazer a fatorial" required></label> 
+        <input type="submit" value="Calcular">
+
+</fieldset>
+    </form>
+    
+</center>
+
+
+<center>
+    <form method="post" action="operacao.php">
+        <fieldset id="D">
+            <h1>Operações</h1>
+        <label for="numero1">Digite o primeiro número:</label>
+        <input type="number" id="numero1" name="numero1" placeholder="Digite um número" required>
+        <br><br>
+        <label for="numero2">Digite o segundo número:</label>
+        <input type="number" id="numero2" name="numero2" placeholder="Digite um número"  required>
+        <br><br>
+        <label for="operacao">Escolha a operação:</label>
+        <select id="operacao" name="operacao" required>
+            <option value="soma">Soma</option>
+            <option value="subtracao">Subtração</option>
+            <option value="multiplicacao">Multiplicação</option>
+            <option value="divisao">Divisão</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Calcular">
+    </fieldset>
+    </form>
+</center>
+
+<center>
+    <form name="tabuada" action="impar_ou_par.php" method="post">
+    <fieldset id="E">
+        <h1>Impar ou Par ?</h1>
+        <br><label>Número: <input type="number" name="P" placeholder="Digite para um número para saber" required></label> 
+        <input type="submit" value="Testar">
+    </fieldset>
+    </form>
+</center>
+
+<center>
+    <form method="post" action="ordem.php">
+    <fieldset id="F">
+        <h1>Ordernando Valores</h1>
+            <label for="A1">Digite o valor de A:</label>
+            <input type="number" id="A1" name="A1" placeholder="Digite um número"  required>
+            <br><br>
+            <label for="B1">Digite o valor de B:</label>
+            <input type="number" id="B1" name="B1"placeholder="Digite um número"   required>
+            <br><br>
+            <input type="submit" value="Ordenar">
+    </fieldset>
+    </form>
+</center>
+
+<center>
+    <form method="post" action="MaiorOuMenor.php">
+    <fieldset id="G">
+        <h1>Tamanhos</h1>
+            <label for="A2">Digite o valor de A:</label>
+            <input type="number" id="A2" name="A2" placeholder="Digite um número"  required>
+            <br><br>
+            <label for="B2">Digite o valor de B:</label>
+            <input type="number" id="B2" name="B2"placeholder="Digite um número"   required>
+            <br><br>
+            <input type="submit" value="Checar">
+    </fieldset>
+    </form>
+</center>
+
+<center>
+    <form action="Media.php" method="post" >
+    <fieldset id="H">
+        <h1>Média</h1>
+        Nota 1: <input type="text" name="nota1"placeholder="Insira a nota do 1° aluno" required><br><br>
+        Nota 2: <input type="text" name="nota2"placeholder="Insira a nota do 2° aluno" required><br><br>
+        Nota 3: <input type="text" name="nota3"placeholder="Insira a nota do 3° aluno" required><br><br>
+        <input type="submit" value="Calcular Média">
+    </fieldset>
+    </form> 
+</center>
+
+<center>
+    <form method="post" action="Verificacao.php">
+    <fieldset id="I">
+        <h1>Verificação de Idade</h1>
+            <label for="nome">Digite o Primeiro Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"  required>
+            <br><br>
+            <label for="idade">Digite Sua Idade</label>
+            <input type="idade" id="idade" name="idade"placeholder="Digite sua idade"   required>
+            <br><br>
+            <input type="submit" value="Verificar">
+    </fieldset>
+    </form>
+</center>
+
+<center>
+    <fieldset id="J">
+        <h1>Escolhendo o Mês</h1>
+        <form method="post" action="mes.php">
+            <label for="mess"> Número do Mês (1 - 12): <input type="number" name="mess" placeholder="Digite um Número de acordo com o Mês" required></label><br><br>
+            <input type="submit" value="ENVIAR">
+        </form>
+    </fieldset>
+</center>
+</body>
+</html>
+
+
